@@ -62,6 +62,7 @@ public class UserService {
 
     public Map<String, Object> login(String username, String password) {
         Map<String, Object> map = new HashMap<String, Object>();
+        logger.info("user logger come!!" );
         if (StringUtils.isBlank(username)) {
             map.put("msgname", "用户名不能为空");
             return map;
