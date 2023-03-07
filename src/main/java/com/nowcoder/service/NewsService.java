@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * Created by nowcoder on 2016/7/2.
+ * Created by bo1234566 on 2023/03/07.
  */
 @Service
 public class NewsService {
