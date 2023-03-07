@@ -1,7 +1,7 @@
 package com.nowcoder.model;
 
 /**
- * Created by nowcoder on 2016/6/26.
+ * Created by bo on 2023/03/07.
  */
 public class User {
     private int id;
