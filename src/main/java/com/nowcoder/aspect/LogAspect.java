@@ -8,8 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
-
 /**
  * Created by nowcoder on 2016/6/26.
  */
@@ -24,9 +22,14 @@ public class LogAspect {
         for (Object arg : joinPoint.getArgs()) {
             sb.append("arg:" + arg.toString() + "|");
         }
-        logger.info("before method: " + sb.toString());
+        logger.info("before method controller: " + sb.toString());
     }
 
+    @Before("execution(* com.nowcoder.service.*Service.*(..))")
+    public void beforeMethodService(JoinPoint joinPoint) {
+        StringBuilder sb = new StringBuilder();
+        logger.info("before method service: " + joinPoint);
+    }
     @After("execution(* com.nowcoder.controller.IndexController.*(..))")
     public void afterMethod(JoinPoint joinPoint) {
         logger.info("after method: ");

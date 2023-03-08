@@ -38,7 +38,7 @@ public class UserService {
         }
 
         User user = userDAO.selectByName(username);
-
+        logger.info("selectByName"+user);
         if (user != null) {
             map.put("msgname", "用户名已经被注册");
             return map;
@@ -94,11 +94,12 @@ public class UserService {
         LoginTicket ticket = new LoginTicket();
         ticket.setUserId(userId);
         Date date = new Date();
-        date.setTime(date.getTime() + 1000*3600*24);
+        date.setTime(date.getTime() + 60);
         ticket.setExpired(date);
         ticket.setStatus(0);
         ticket.setTicket(UUID.randomUUID().toString().replaceAll("-", ""));
         loginTicketDAO.addTicket(ticket);
+        logger.info("addTicket"+ticket);
         return ticket.getTicket();
     }
 

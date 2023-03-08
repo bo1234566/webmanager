@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by nowcoder on 2016/7/2.
+ * Created by bo1234566 on 2023/03/08.
  */
 @Controller
 public class LoginController {
@@ -60,7 +60,7 @@ public class LoginController {
                       @RequestParam("password") String password,
                       @RequestParam(value="rember", defaultValue = "0") int rememberme) {
         try {
-            Map<String, Object> map = userService.register(username, password);
+            Map<String, Object> map = userService.login(username, password);
             if (map.containsKey("ticket")) {
                 Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
                 cookie.setPath("/");
