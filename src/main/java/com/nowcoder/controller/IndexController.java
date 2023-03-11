@@ -21,22 +21,22 @@ import javax.servlet.http.HttpSession;
 import java.util.*;
 
 /**
- * Created by nowcoder on 2016/6/26.
+ * Created by bo1234566 on 2023/3/11.
  */
-//@Controller
+@Controller
 public class IndexController {
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
     @Autowired
     private ToutiaoService toutiaoService;
 
-    @RequestMapping(path = {"/", "/index"}, method = {RequestMethod.GET, RequestMethod.POST})
-    @ResponseBody
-    public String index(HttpSession session) {
-        logger.info("Visit Index");
-        return "Hello NowCoder," + session.getAttribute("msg")
-                + "<br> Say:" + toutiaoService.say();
-    }
+//    @RequestMapping(path = {"/", "/index"}, method = {RequestMethod.GET, RequestMethod.POST})
+//    @ResponseBody
+//    public String index(HttpSession session) {
+//        logger.info("Visit Index");
+//        return "Hello NowCoder," + session.getAttribute("msg")
+//                + "<br> Say:" + toutiaoService.say();
+//    }
 
     @RequestMapping(value = {"/profile/{groupId}/{userId}"})
     @ResponseBody
