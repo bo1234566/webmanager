@@ -40,10 +40,14 @@ public class UserService {
         User user = userDAO.selectByName(username);
         logger.info("selectByName"+user);
         if (user != null) {
-            map.put("msgname", "用户名已经被注册");
+            map.put("msgname", "用户名已被注册");
             return map;
         }
-
+        //todo 敏感词
+        if(username.equals("admin")){
+            map.put("msgname","用户名不合法");
+            return map;
+        }
         // 密码强度
         user = new User();
         user.setName(username);

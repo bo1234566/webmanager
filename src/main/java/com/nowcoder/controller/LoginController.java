@@ -40,7 +40,7 @@ public class LoginController {
                 Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
                 cookie.setPath("/");
                 if (rememberme > 0) {
-                    cookie.setMaxAge(3600*24*5);
+                    cookie.setMaxAge(600);
                 }
                 response.addCookie(cookie);
                 return ToutiaoUtil.getJSONString(0, "注册成功");
@@ -65,16 +65,17 @@ public class LoginController {
                 Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
                 cookie.setPath("/");
                 if (rememberme > 0) {
-                    cookie.setMaxAge(3600*24*5);
+                    cookie.setMaxAge(600);
                 }
-                return ToutiaoUtil.getJSONString(0, "注册成功");
+                //return getJSONStrings 返回到界面？返回一个responsebody,用于显示状态，同时前端界面在登录小窗格解析responsebody
+                return ToutiaoUtil.getJSONString(0, "登录成功");
             } else {
                 return ToutiaoUtil.getJSONString(1, map);
             }
 
         } catch (Exception e) {
-            logger.error("注册异常" + e.getMessage());
-            return ToutiaoUtil.getJSONString(1, "注册异常");
+            logger.error("登录异常" + e.getMessage());
+            return ToutiaoUtil.getJSONString(1, "登录异常");
         }
     }
 

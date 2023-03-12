@@ -5,7 +5,8 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Created by rainday on 16/6/30.
+ * Created by bo1234566 on 2023/3/12.
+ * 用于展示的页面模型
  */
 public class ViewObject {
     private Map<String, Object> objs = new HashMap<String, Object>();

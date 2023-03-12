@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by nowcoder on 2016/7/2.
+ * Created by bo1234566 on 2023/3/12.
  */
 @Controller
 public class HomeController {
@@ -27,6 +27,11 @@ public class HomeController {
     @Autowired
     HostHolder hostHolder;
 
+    /**
+     * getNews负责整体显示和单独用户显示
+     * 通过vos传递给前端参数
+     * 统一显示home.html界面
+     */
     private List<ViewObject> getNews(int userId, int offset, int limit) {
         List<News> newsList = newsService.getLatestNews(userId, offset, limit);
 
@@ -47,7 +52,9 @@ public class HomeController {
         model.addAttribute("pop", pop);
         return "home";
     }
-
+/*
+* model.addAttribute的对象 vos 传递给home.html
+ */
     @RequestMapping(path = {"/user/{userId}"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String userIndex(Model model, @PathVariable("userId") int userId) {
         model.addAttribute("vos", getNews(userId, 0, 10));
