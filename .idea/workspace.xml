@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="modified IndexController logic">
+    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_24_0_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/ViewObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/ViewObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/HostHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/HostHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/NewsDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/NewsDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/InitDatabaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/InitDatabaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/NewsDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/NewsDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/model/ViewObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/model/ViewObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nowcoder/InitDatabaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nowcoder/InitDatabaseTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +39,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="bo1234566 &lt;wangbohpu@163.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GradleLocalSettings">
@@ -186,15 +185,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/BO_work/resume/牛客项目/code/代码/webmanager/webmanager&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/resume/code/webmanager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nowcoder.interceptor" />
@@ -211,7 +208,7 @@
       <recent name="D:\workspace\toutiao\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ToutiaoApplication">
+  <component name="RunManager" selected="JUnit.InitDatabaseTests">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -376,6 +373,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ToutiaoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.ToutiaoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -409,14 +422,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.ToutiaoApplication" />
+      <item itemvalue="JUnit.ToutiaoApplicationTests" />
       <item itemvalue="JUnit.InitDatabaseTests.InitDataBase" />
       <item itemvalue="JUnit.InitDatabaseTests" />
       <item itemvalue="JUnit.InitDatabaseTests.initData" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ToutiaoApplication" />
         <item itemvalue="JUnit.InitDatabaseTests" />
+        <item itemvalue="Application.ToutiaoApplication" />
+        <item itemvalue="JUnit.ToutiaoApplicationTests" />
         <item itemvalue="JUnit.InitDatabaseTests.initData" />
         <item itemvalue="JUnit.InitDatabaseTests.InitDataBase" />
       </list>
@@ -448,21 +463,7 @@
       <option name="project" value="LOCAL" />
       <updated>1467550383505</updated>
     </task>
-    <task id="LOCAL-00003" summary="modified IndexController logic">
-      <created>1678544838536</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1678544838536</updated>
-    </task>
-    <task id="LOCAL-00004" summary="modified IndexController logic">
-      <created>1678545049164</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1678545049164</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -582,21 +583,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第四次课参考代码。" />
-    <MESSAGE value="modified IndexController logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified IndexController logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四次课参考代码。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LoginController.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="17" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java</url>
+          <line>34</line>
+          <properties class="com.nowcoder.controller.HomeController" method="getNews">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -612,7 +616,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/webmanager$ToutiaoApplication.ic" NAME="ToutiaoApplication Coverage Results" MODIFIED="1678538180791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/webmanager$ToutiaoApplication.ic" NAME="ToutiaoApplication Coverage Results" MODIFIED="1678710243378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nowcoder.*</FILTER>
     </SUITE>
   </component>

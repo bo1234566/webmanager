@@ -14,7 +14,7 @@
         <if test="userId != 0">
             WHERE user_id = #{userId}
         </if>
-        ORDER BY id DESC
+        ORDER BY id ASC
         LIMIT #{offset},#{limit}
     </select>
 </mapper>
