@@ -40,7 +40,7 @@ public class LoginController {
                 Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
                 cookie.setPath("/");
                 if (rememberme > 0) {
-                    cookie.setMaxAge(600);
+                    cookie.setMaxAge(1000*3600*24);
                 }
                 response.addCookie(cookie);
                 return ToutiaoUtil.getJSONString(0, "注册成功");
@@ -58,15 +58,17 @@ public class LoginController {
     @ResponseBody
     public String login(Model model, @RequestParam("username") String username,
                       @RequestParam("password") String password,
-                      @RequestParam(value="rember", defaultValue = "0") int rememberme) {
+                      @RequestParam(value="rember", defaultValue = "0") int rememberme,
+                      HttpServletResponse response) {
         try {
             Map<String, Object> map = userService.login(username, password);
             if (map.containsKey("ticket")) {
                 Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
                 cookie.setPath("/");
                 if (rememberme > 0) {
-                    cookie.setMaxAge(600);
+                    cookie.setMaxAge(1000*3600*24);
                 }
+                response.addCookie(cookie);
                 //return getJSONStrings 返回到界面？返回一个responsebody,用于显示状态，同时前端界面在登录小窗格解析responsebody
                 return ToutiaoUtil.getJSONString(0, "登录成功");
             } else {

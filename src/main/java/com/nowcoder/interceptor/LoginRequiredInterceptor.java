@@ -30,6 +30,7 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
             httpServletResponse.sendRedirect("/?pop=1");
             return false;
         }
+        //add Customization code for specific user????
         return true;
     }
 
