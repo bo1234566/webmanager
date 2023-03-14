@@ -25,11 +25,11 @@ public class LogAspect {
         logger.info("before method controller: " + sb.toString());
     }
 
-    @Before("execution(* com.nowcoder.service.*Service.*(..))")
-    public void beforeMethodService(JoinPoint joinPoint) {
-        StringBuilder sb = new StringBuilder();
-        logger.info("before method service: " + joinPoint);
-    }
+//    @Before("execution(* com.nowcoder.service.*Service.*(..))")
+//    public void beforeMethodService(JoinPoint joinPoint) {
+//        StringBuilder sb = new StringBuilder();
+//        logger.info("before method service: " + joinPoint);
+//    }
     @After("execution(* com.nowcoder.controller.IndexController.*(..))")
     public void afterMethod(JoinPoint joinPoint) {
         logger.info("after method: ");

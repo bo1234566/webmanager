@@ -33,7 +33,7 @@ public class InitDatabaseTests {
     @Test
     public void initData() {
         Random random = new Random();
-        for (int i = 0; i < 101; ++i) {
+        for (int i = 0; i < 2; ++i) {
             User user = new User();
             user.setHeadUrl(String.format("http://images.nowcoder.com/head/%dt.png", random.nextInt(1000)));
             user.setName(String.format("USER%d", i));
