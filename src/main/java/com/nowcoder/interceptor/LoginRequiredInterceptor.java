@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * Created by nowcoder on 2016/7/3.
+ * Created by bo1234566 on 2023/3/17.
  */
 @Component
 public class LoginRequiredInterceptor implements HandlerInterceptor {
@@ -28,6 +28,14 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
     @Autowired
     private HostHolder hostHolder;
 
+    /**
+     * @param httpServletRequest current HTTP request
+     * @param httpServletResponse current HTTP response
+     * @param o chosen handler to execute, for type and/or instance evaluation
+     * @param ‘pop’  connect to home.html and use to pop up login window
+     * @return
+     * @throws Exception
+     */
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         if (hostHolder.getUser() == null) {
