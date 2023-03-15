@@ -5,6 +5,8 @@ import com.nowcoder.model.News;
 import com.nowcoder.model.ViewObject;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +20,7 @@ import java.util.List;
  */
 @Controller
 public class HomeController {
+    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
     @Autowired
     NewsService newsService;
 
@@ -50,6 +53,7 @@ public class HomeController {
                         @RequestParam(value = "pop", defaultValue = "0") int pop) {
         model.addAttribute("vos", getNews(0, 0, 100));
         model.addAttribute("pop", pop);
+        logger.info("test: this is / or /index rendering");
         return "home";
     }
 /*

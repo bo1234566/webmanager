@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
- * Created by nowcoder on 2016/7/3.
+ * Created by bo1234566 on 2023/3/15.
  */
 @Component
 public class PassportInterceptor implements HandlerInterceptor {
@@ -48,13 +48,11 @@ public class PassportInterceptor implements HandlerInterceptor {
         if (ticket != null) {
             LoginTicket loginTicket = loginTicketDAO.selectByTicket(ticket);
             if (loginTicket == null || loginTicket.getExpired().before(new Date()) || loginTicket.getStatus() != 0) {
-                logger.info("PassportInterceptor preHandle ticket is not valuable"+ loginTicket.toString());
                 return true;
             }
 
             User user = userDAO.selectById(loginTicket.getUserId());
             hostHolder.setUser(user);
-            logger.info("PassportInterceptor preHandle" + user.getId());
         }
         return true;
     }
@@ -62,15 +60,14 @@ public class PassportInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
         if (modelAndView != null && hostHolder.getUser() != null) {
-            //this area user hostHolder and addObject, how display on the html??
+            //this area user hostHolder and addObject,  html related to the modelAndView
             modelAndView.addObject("user", hostHolder.getUser());
         }
-       logger.info("PassportInterceptor postHandle" );
     }
 
     @Override
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
-        logger.info("PassportInterceptor afterCompletion clear" );
+        // threadLocal variable must clear Here  !!
         hostHolder.clear();
     }
 }

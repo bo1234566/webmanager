@@ -84,6 +84,7 @@ public class LoginController {
     @RequestMapping(path = {"/logout/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String logout(@CookieValue("ticket") String ticket) {
         userService.logout(ticket);
+        logger.info("test: user type logout");
         return "redirect:/";
     }
 
