@@ -88,8 +88,27 @@ public class LoginController {
         return "redirect:/";
     }
 
-/**
- * todo forgetPassword function
- *
- */
+    /**
+     * todo forgetPassword function
+     *
+     */
+    @RequestMapping(path = {"/forgetPassword/"}, method = {RequestMethod.GET, RequestMethod.POST})
+    public String forgetPassword(Model model, @RequestParam("username") String username,
+                                 @RequestParam("oldPassword") String oldPassword,
+                                 @RequestParam("newPassword") String newPassword,
+                                 @CookieValue("ticket") String ticket){
+        try {
+            Map<String, Object> map = userService.forgetPassword(username, oldPassword, newPassword);
+            if (map.isEmpty()) {
+                userService.logout(ticket);
+                return "redirect:/";
+            } else {
+                return ToutiaoUtil.getJSONString(1, map.values().toString());
+            }
+        }
+        catch (Exception e){
+            logger.error("更新密码失败" + e.getMessage());
+            return ToutiaoUtil.getJSONString(1,"更新密码失败");
+        }
+    }
 }

@@ -1189,3 +1189,446 @@
 2023-03-18 01:05:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
 2023-03-18 01:10:14.014  INFO   o.springframework.context.support.AbstractApplicationContext  行:960    Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d843567: startup date [Sat Mar 18 01:04:28 CST 2023]; root of context hierarchy
 2023-03-18 01:10:14.014  INFO   org.springframework.jmx.export.MBeanExporter                  行:449    Unregistering JMX-exposed beans on shutdown
+2023-03-18 01:43:33.033  INFO   org.springframework.boot.StartupInfoLogger                    行:48     Starting InitDatabaseTests on LAPTOP-C167LQK3 with PID 21340 (started by XinYe in D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager)
+2023-03-18 01:43:33.033  INFO   org.springframework.boot.SpringApplication                    行:666    No active profile set, falling back to default profiles: default
+2023-03-18 01:43:33.033  INFO   o.springframework.context.support.AbstractApplicationContext  行:578    Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3eb738bb: startup date [Sat Mar 18 01:43:33 CST 2023]; root of context hierarchy
+2023-03-18 01:43:33.033  INFO   org.hibernate.validator.internal.util.Version                 行:30     HV000001: Hibernate Validator 5.2.4.Final
+2023-03-18 01:43:36.036  INFO   org.springframework.boot.StartupInfoLogger                    行:57     Started InitDatabaseTests in 3.201 seconds (JVM running for 4.386)
+2023-03-18 01:43:37.037  INFO   org.springframework.jdbc.datasource.init.ScriptUtils          行:444    Executing SQL script from class path resource [init-schema.sql]
+2023-03-18 01:43:37.037  INFO   org.springframework.jdbc.datasource.init.ScriptUtils          行:510    Executed SQL script from class path resource [init-schema.sql] in 133 ms.
+2023-03-18 01:43:37.037  INFO   o.springframework.context.support.AbstractApplicationContext  行:960    Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3eb738bb: startup date [Sat Mar 18 01:43:33 CST 2023]; root of context hierarchy
+2023-03-18 01:44:09.009  INFO   org.springframework.boot.StartupInfoLogger                    行:48     Starting ToutiaoApplication on LAPTOP-C167LQK3 with PID 6776 (started by XinYe in D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager)
+2023-03-18 01:44:09.009  INFO   org.springframework.boot.SpringApplication                    行:666    No active profile set, falling back to default profiles: default
+2023-03-18 01:44:09.009  INFO   o.springframework.context.support.AbstractApplicationContext  行:578    Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c0eddd1: startup date [Sat Mar 18 01:44:09 CST 2023]; root of context hierarchy
+2023-03-18 01:44:09.009  INFO   org.hibernate.validator.internal.util.Version                 行:30     HV000001: Hibernate Validator 5.2.4.Final
+2023-03-18 01:44:10.010  INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  行:328    Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$906fc0df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-18 01:44:12.012  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:81     Tomcat initialized with port(s): 8080 (http)
+2023-03-18 01:44:12.012  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting service Tomcat
+2023-03-18 01:44:12.012  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting Servlet Engine: Apache Tomcat/8.0.33
+2023-03-18 01:44:12.012  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing Spring embedded WebApplicationContext
+2023-03-18 01:44:12.012  INFO   o.s.boot.context.embedded.EmbeddedWebApplicationContext       行:272    Root WebApplicationContext: initialization completed in 2702 ms
+2023-03-18 01:44:12.012  INFO   o.s.boot.context.embedded.ServletRegistrationBean             行:189    Mapping servlet: 'dispatcherServlet' to [/]
+2023-03-18 01:44:12.012  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-18 01:44:12.012  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-03-18 01:44:12.012  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-03-18 01:44:12.012  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'requestContextFilter' to: [/*]
+2023-03-18 01:44:14.014  INFO   o.s.w.s.mvc.method.annotation.RequestMappingHandlerAdapter    行:539    Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c0eddd1: startup date [Sat Mar 18 01:44:09 CST 2023]; root of context hierarchy
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/ || /index],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.HomeController.index(org.springframework.ui.Model,int)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/user/{userId}],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.HomeController.userIndex(org.springframework.ui.Model,int)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/profile/{groupId}/{userId}]}" onto public java.lang.String com.nowcoder.controller.IndexController.profile(java.lang.String,int,int,java.lang.String)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/request]}" onto public java.lang.String com.nowcoder.controller.IndexController.request(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/redirect/{code}]}" onto public java.lang.String com.nowcoder.controller.IndexController.redirect(int,javax.servlet.http.HttpSession)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/response]}" onto public java.lang.String com.nowcoder.controller.IndexController.response(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/vm]}" onto public java.lang.String com.nowcoder.controller.IndexController.news(org.springframework.ui.Model)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/admin]}" onto public java.lang.String com.nowcoder.controller.IndexController.admin(java.lang.String)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/reg/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.reg(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/logout/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.logout(java.lang.String)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/login/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/forgetPassword/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.forgetPassword(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/setting]}" onto public java.lang.String com.nowcoder.controller.SettingController.setting()
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-03-18 01:44:14.014  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:44:14.014  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:44:14.014  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:44:14.014  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:44:14.014  INFO   o.s.b.web.servlet.view.velocity.EmbeddedVelocityViewResolver  行:38     Using EmbeddedVelocityToolboxView instead of default VelocityView due to specified toolboxConfigLocation
+2023-03-18 01:44:14.014  INFO   o.s.web.servlet.view.velocity.VelocityConfigurer              行:140    ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2023-03-18 01:44:14.014  INFO   o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer      行:58     LiveReload server is running on port 35729
+2023-03-18 01:44:14.014  INFO   org.springframework.jmx.export.MBeanExporter                  行:431    Registering beans for JMX exposure on startup
+2023-03-18 01:44:14.014  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:44:14.014  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:44:14.014  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Using a shared selector for servlet write/read
+2023-03-18 01:44:14.014  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:162    Tomcat started on port(s): 8080 (http)
+2023-03-18 01:44:14.014  INFO   org.springframework.boot.StartupInfoLogger                    行:57     Started ToutiaoApplication in 5.958 seconds (JVM running for 6.783)
+2023-03-18 01:44:15.015  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-03-18 01:44:15.015  INFO   org.springframework.web.servlet.FrameworkServlet              行:487    FrameworkServlet 'dispatcherServlet': initialization started
+2023-03-18 01:44:15.015  INFO   org.springframework.web.servlet.FrameworkServlet              行:506    FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2023-03-18 01:44:15.015  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:44:15.015  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:45:00.000  INFO   o.springframework.context.support.AbstractApplicationContext  行:960    Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c0eddd1: startup date [Sat Mar 18 01:44:09 CST 2023]; root of context hierarchy
+2023-03-18 01:45:00.000  INFO   org.springframework.jmx.export.MBeanExporter                  行:449    Unregistering JMX-exposed beans on shutdown
+2023-03-18 01:45:00.000  INFO   org.springframework.boot.StartupInfoLogger                    行:48     Starting ToutiaoApplication on LAPTOP-C167LQK3 with PID 6776 (started by XinYe in D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager)
+2023-03-18 01:45:00.000  INFO   org.springframework.boot.SpringApplication                    行:666    No active profile set, falling back to default profiles: default
+2023-03-18 01:45:00.000  INFO   o.springframework.context.support.AbstractApplicationContext  行:578    Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@260a6bfa: startup date [Sat Mar 18 01:45:00 CST 2023]; root of context hierarchy
+2023-03-18 01:45:01.001  WARN   org.mybatis.spring.mapper.ClassPathMapperScanner              行:167    No MyBatis mapper was found in '[com.nowcoder]' package. Please check your configuration.
+2023-03-18 01:45:01.001  INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  行:328    Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$906fc0df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-18 01:45:01.001  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:81     Tomcat initialized with port(s): 8080 (http)
+2023-03-18 01:45:01.001  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting service Tomcat
+2023-03-18 01:45:01.001  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting Servlet Engine: Apache Tomcat/8.0.33
+2023-03-18 01:45:01.001  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing Spring embedded WebApplicationContext
+2023-03-18 01:45:01.001  INFO   o.s.boot.context.embedded.EmbeddedWebApplicationContext       行:272    Root WebApplicationContext: initialization completed in 628 ms
+2023-03-18 01:45:01.001  INFO   o.s.boot.context.embedded.ServletRegistrationBean             行:189    Mapping servlet: 'dispatcherServlet' to [/]
+2023-03-18 01:45:01.001  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-18 01:45:01.001  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-03-18 01:45:01.001  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-03-18 01:45:01.001  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'requestContextFilter' to: [/*]
+2023-03-18 01:45:01.001  INFO   o.s.w.s.mvc.method.annotation.RequestMappingHandlerAdapter    行:539    Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@260a6bfa: startup date [Sat Mar 18 01:45:00 CST 2023]; root of context hierarchy
+2023-03-18 01:45:01.001  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-03-18 01:45:01.001  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:45:01.001  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:45:01.001  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:45:01.001  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:45:01.001  INFO   o.s.b.web.servlet.view.velocity.EmbeddedVelocityViewResolver  行:38     Using EmbeddedVelocityToolboxView instead of default VelocityView due to specified toolboxConfigLocation
+2023-03-18 01:45:01.001  INFO   o.s.web.servlet.view.velocity.VelocityConfigurer              行:140    ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2023-03-18 01:45:01.001  INFO   o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer      行:58     LiveReload server is running on port 35729
+2023-03-18 01:45:01.001  INFO   org.springframework.jmx.export.MBeanExporter                  行:431    Registering beans for JMX exposure on startup
+2023-03-18 01:45:01.001  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:45:01.001  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:45:01.001  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Using a shared selector for servlet write/read
+2023-03-18 01:45:01.001  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:162    Tomcat started on port(s): 8080 (http)
+2023-03-18 01:45:01.001  INFO   org.springframework.boot.StartupInfoLogger                    行:57     Started ToutiaoApplication in 1.27 seconds (JVM running for 53.855)
+2023-03-18 01:45:05.005  INFO   o.springframework.context.support.AbstractApplicationContext  行:960    Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@260a6bfa: startup date [Sat Mar 18 01:45:00 CST 2023]; root of context hierarchy
+2023-03-18 01:45:05.005  INFO   org.springframework.jmx.export.MBeanExporter                  行:449    Unregistering JMX-exposed beans on shutdown
+2023-03-18 01:45:06.006  INFO   org.springframework.boot.StartupInfoLogger                    行:48     Starting ToutiaoApplication on LAPTOP-C167LQK3 with PID 6776 (started by XinYe in D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager)
+2023-03-18 01:45:06.006  INFO   org.springframework.boot.SpringApplication                    行:666    No active profile set, falling back to default profiles: default
+2023-03-18 01:45:06.006  INFO   o.springframework.context.support.AbstractApplicationContext  行:578    Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51c42da: startup date [Sat Mar 18 01:45:06 CST 2023]; root of context hierarchy
+2023-03-18 01:45:06.006  INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  行:328    Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$906fc0df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-18 01:45:06.006  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:81     Tomcat initialized with port(s): 8080 (http)
+2023-03-18 01:45:06.006  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting service Tomcat
+2023-03-18 01:45:06.006  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting Servlet Engine: Apache Tomcat/8.0.33
+2023-03-18 01:45:06.006  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing Spring embedded WebApplicationContext
+2023-03-18 01:45:06.006  INFO   o.s.boot.context.embedded.EmbeddedWebApplicationContext       行:272    Root WebApplicationContext: initialization completed in 707 ms
+2023-03-18 01:45:06.006  INFO   o.s.boot.context.embedded.ServletRegistrationBean             行:189    Mapping servlet: 'dispatcherServlet' to [/]
+2023-03-18 01:45:06.006  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-18 01:45:06.006  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-03-18 01:45:06.006  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-03-18 01:45:06.006  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'requestContextFilter' to: [/*]
+2023-03-18 01:45:07.007  INFO   o.s.w.s.mvc.method.annotation.RequestMappingHandlerAdapter    行:539    Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51c42da: startup date [Sat Mar 18 01:45:06 CST 2023]; root of context hierarchy
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/ || /index],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.HomeController.index(org.springframework.ui.Model,int)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/user/{userId}],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.HomeController.userIndex(org.springframework.ui.Model,int)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/profile/{groupId}/{userId}]}" onto public java.lang.String com.nowcoder.controller.IndexController.profile(java.lang.String,int,int,java.lang.String)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/request]}" onto public java.lang.String com.nowcoder.controller.IndexController.request(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/redirect/{code}]}" onto public java.lang.String com.nowcoder.controller.IndexController.redirect(int,javax.servlet.http.HttpSession)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/response]}" onto public java.lang.String com.nowcoder.controller.IndexController.response(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/vm]}" onto public java.lang.String com.nowcoder.controller.IndexController.news(org.springframework.ui.Model)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/admin]}" onto public java.lang.String com.nowcoder.controller.IndexController.admin(java.lang.String)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/reg/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.reg(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/logout/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.logout(java.lang.String)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/login/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/forgetPassword/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.forgetPassword(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/setting]}" onto public java.lang.String com.nowcoder.controller.SettingController.setting()
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-03-18 01:45:07.007  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:45:07.007  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:45:07.007  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:45:07.007  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:45:07.007  INFO   o.s.b.web.servlet.view.velocity.EmbeddedVelocityViewResolver  行:38     Using EmbeddedVelocityToolboxView instead of default VelocityView due to specified toolboxConfigLocation
+2023-03-18 01:45:07.007  INFO   o.s.web.servlet.view.velocity.VelocityConfigurer              行:140    ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2023-03-18 01:45:07.007  INFO   o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer      行:58     LiveReload server is running on port 35729
+2023-03-18 01:45:07.007  INFO   org.springframework.jmx.export.MBeanExporter                  行:431    Registering beans for JMX exposure on startup
+2023-03-18 01:45:07.007  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:45:07.007  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:45:07.007  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Using a shared selector for servlet write/read
+2023-03-18 01:45:07.007  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:162    Tomcat started on port(s): 8080 (http)
+2023-03-18 01:45:07.007  INFO   org.springframework.boot.StartupInfoLogger                    行:57     Started ToutiaoApplication in 1.489 seconds (JVM running for 59.502)
+2023-03-18 01:45:17.017  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing Spring FrameworkServlet 'dispatcherServlet'
+2023-03-18 01:45:17.017  INFO   org.springframework.web.servlet.FrameworkServlet              行:487    FrameworkServlet 'dispatcherServlet': initialization started
+2023-03-18 01:45:17.017  INFO   org.springframework.web.servlet.FrameworkServlet              行:506    FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2023-03-18 01:45:17.017  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:45:17.017  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:17.017  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:17.017  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:17.017  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:17.017  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:18.018  INFO   org.apache.velocity.tools.view.servlet.ServletToolboxManager  行:170    Using config file '/toolbox.xml'
+2023-03-18 01:45:18.018  WARN   org.apache.velocity.tools.view.XMLToolboxManager              行:100    XMLToolboxManager has been deprecated. Please use org.apache.velocity.tools.ToolboxFactory instead.
+2023-03-18 01:45:18.018  WARN   org.apache.velocity.tools.view.servlet.ServletToolboxManager  行:131    ServletToolboxManager has been deprecated. Please use org.apache.velocity.tools.ToolboxFactory instead.
+2023-03-18 01:45:18.018  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:18.018  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:45:18.018  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:18.018  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:18.018  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:18.018  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:45:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:21.021  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@4a6c52b7|
+2023-03-18 01:45:21.021  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:45:22.022  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:22.022  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:22.022  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:26.026  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:45:26.026  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:26.026  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbot|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@4a6c52b7|
+2023-03-18 01:45:26.026  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:45:26.026  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:26.026  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:26.026  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket ce6a80ba28aa402e9185c92185992fa5
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:27.027  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbot|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@4a6c52b7|
+2023-03-18 01:45:27.027  INFO   com.nowcoder.service.UserService                              行:41     selectByNamenull
+2023-03-18 01:45:27.027  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 3
+2023-03-18 01:45:27.027  INFO   com.nowcoder.service.UserService                              行:107    addTicket a9f878a061814969af3659c70c035b0e
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket a9f878a061814969af3659c70c035b0e
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@7ee99bcf
+2023-03-18 01:45:27.027  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:27.027  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@7ee99bcf
+2023-03-18 01:45:27.027  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket a9f878a061814969af3659c70c035b0e
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@52d44f12
+2023-03-18 01:45:32.032  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbo|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@134ff66e|
+2023-03-18 01:45:32.032  INFO   com.nowcoder.service.UserService                              行:41     selectByNamenull
+2023-03-18 01:45:32.032  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 4
+2023-03-18 01:45:32.032  INFO   com.nowcoder.service.UserService                              行:107    addTicket b56b78c3dce94f17b48cd0385110a8da
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket b56b78c3dce94f17b48cd0385110a8da
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@24255cd
+2023-03-18 01:45:32.032  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:32.032  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@24255cd
+2023-03-18 01:45:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:39.039  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket b56b78c3dce94f17b48cd0385110a8da
+2023-03-18 01:45:39.039  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@1e2e17ac
+2023-03-18 01:45:39.039  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@11db9eeb|
+2023-03-18 01:45:39.039  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:45:39.039  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:39.039  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:39.039  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket b56b78c3dce94f17b48cd0385110a8da
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@38da525b
+2023-03-18 01:45:40.040  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@9b38c2f|
+2023-03-18 01:45:40.040  INFO   com.nowcoder.service.UserService                              行:41     selectByNamenull
+2023-03-18 01:45:40.040  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 5
+2023-03-18 01:45:40.040  INFO   com.nowcoder.service.UserService                              行:107    addTicket 6b5b4d3c89bc46df9d1eb052e711f026
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 6b5b4d3c89bc46df9d1eb052e711f026
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@57f405f1
+2023-03-18 01:45:40.040  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:40.040  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@57f405f1
+2023-03-18 01:45:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 6b5b4d3c89bc46df9d1eb052e711f026
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@497b96ab
+2023-03-18 01:45:45.045  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest12|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@9b38c2f|
+2023-03-18 01:45:45.045  INFO   com.nowcoder.service.UserService                              行:41     selectByNamenull
+2023-03-18 01:45:45.045  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 6
+2023-03-18 01:45:45.045  INFO   com.nowcoder.service.UserService                              行:107    addTicket 9a5913b8f9bd4a6d97a48cae67aa6b38
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 9a5913b8f9bd4a6d97a48cae67aa6b38
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@46c7a4d0
+2023-03-18 01:45:45.045  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:45.045  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@46c7a4d0
+2023-03-18 01:45:45.045  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 9a5913b8f9bd4a6d97a48cae67aa6b38
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@5248931f
+2023-03-18 01:45:49.049  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:9a5913b8f9bd4a6d97a48cae67aa6b38|
+2023-03-18 01:45:49.049  INFO   com.nowcoder.controller.LoginController                       行:87     test: user type logout
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@5248931f
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 9a5913b8f9bd4a6d97a48cae67aa6b38
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:49.049  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:49.049  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 9a5913b8f9bd4a6d97a48cae67aa6b38
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:49.049  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 9a5913b8f9bd4a6d97a48cae67aa6b38
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:45:59.059  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@6735ad85|
+2023-03-18 01:45:59.059  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:45:59.059  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 5
+2023-03-18 01:45:59.059  INFO   com.nowcoder.service.UserService                              行:107    addTicket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@18b77bb0
+2023-03-18 01:45:59.059  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:45:59.059  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@18b77bb0
+2023-03-18 01:45:59.059  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@223d4eb8
+2023-03-18 01:46:14.014  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:654321|arg:5a39b45937554ab4853ef8cf92725d18|
+2023-03-18 01:46:14.014  INFO   com.nowcoder.service.UserService                              行:147    更新用户新密码成功 654321
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@223d4eb8
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:46:14.014  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:46:14.014  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:46:14.014  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:46:47.047  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:654321|arg:6543210|arg:5a39b45937554ab4853ef8cf92725d18|
+2023-03-18 01:46:47.047  INFO   com.nowcoder.service.UserService                              行:147    更新用户新密码成功 6543210
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:46:47.047  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:46:47.047  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:46:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:47:41.041  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:47:41.041  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:47:41.041  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@4a6c52b7|
+2023-03-18 01:47:41.041  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:47:41.041  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:47:41.041  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:47:41.041  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 5a39b45937554ab4853ef8cf92725d18
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:47:47.047  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:6543210|arg:0|arg:org.apache.catalina.connector.ResponseFacade@4a6c52b7|
+2023-03-18 01:47:47.047  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:47:47.047  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 5
+2023-03-18 01:47:47.047  INFO   com.nowcoder.service.UserService                              行:107    addTicket 99868bd36c194ee397c5e97f151ca593
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 99868bd36c194ee397c5e97f151ca593
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@88445c1
+2023-03-18 01:47:47.047  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:47:47.047  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@88445c1
+2023-03-18 01:47:47.047  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 99868bd36c194ee397c5e97f151ca593
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@6f96feaa
+2023-03-18 01:48:21.021  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:6543210|arg:654321|arg:99868bd36c194ee397c5e97f151ca593|
+2023-03-18 01:48:21.021  INFO   com.nowcoder.service.UserService                              行:147    更新用户新密码成功 654321
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@6f96feaa
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 99868bd36c194ee397c5e97f151ca593
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:48:21.021  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:48:21.021  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:48:21.021  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:48:52.052  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 99868bd36c194ee397c5e97f151ca593
+2023-03-18 01:48:52.052  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:48:52.052  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@11db9eeb|
+2023-03-18 01:48:52.052  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:48:52.052  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:48:52.052  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:48:52.052  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket 99868bd36c194ee397c5e97f151ca593
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:49:11.011  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:654321|arg:0|arg:org.apache.catalina.connector.ResponseFacade@11db9eeb|
+2023-03-18 01:49:11.011  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:49:11.011  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 5
+2023-03-18 01:49:11.011  INFO   com.nowcoder.service.UserService                              行:107    addTicket eeafff05fd9445e5b8754234dbc518e3
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket eeafff05fd9445e5b8754234dbc518e3
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@60ba6eca
+2023-03-18 01:49:11.011  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:49:11.011  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@60ba6eca
+2023-03-18 01:49:11.011  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket eeafff05fd9445e5b8754234dbc518e3
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@1c1b244b
+2023-03-18 01:49:32.032  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:654321|arg:123456|arg:eeafff05fd9445e5b8754234dbc518e3|
+2023-03-18 01:49:32.032  INFO   com.nowcoder.service.UserService                              行:147    更新用户新密码成功 123456
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@1c1b244b
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket eeafff05fd9445e5b8754234dbc518e3
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:49:32.032  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:49:32.032  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:49:32.032  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket eeafff05fd9445e5b8754234dbc518e3
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:53     preHandle not set hostHolder
+2023-03-18 01:49:40.040  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:wangbotest1|arg:123456|arg:0|arg:org.apache.catalina.connector.ResponseFacade@4a6c52b7|
+2023-03-18 01:49:40.040  INFO   com.nowcoder.service.UserService                              行:69     user logger come!!
+2023-03-18 01:49:40.040  INFO   com.nowcoder.service.UserService                              行:106    user id add ticket 5
+2023-03-18 01:49:40.040  INFO   com.nowcoder.service.UserService                              行:107    addTicket b5960a58462f440a92197728df723afd
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null false
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null false
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:43     preHandle ticket b5960a58462f440a92197728df723afd
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:59     preHandler set hostHolder com.nowcoder.model.User@6c54bff
+2023-03-18 01:49:40.040  INFO   com.nowcoder.aspect.LogAspect                                 行:25     before method controller: arg:{}|arg:0|
+2023-03-18 01:49:40.040  INFO   com.nowcoder.controller.HomeController                        行:56     test: this is / or /index rendering
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:66     modelAndView not null true
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:67     hostHolder getUser not null true
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:71     postHandle add modelAndView com.nowcoder.model.User@6c54bff
+2023-03-18 01:49:40.040  INFO   com.nowcoder.interceptor.PassportInterceptor                  行:79     afterCompletion clear hostHolder
+2023-03-18 01:51:07.007  INFO   o.springframework.context.support.AbstractApplicationContext  行:960    Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51c42da: startup date [Sat Mar 18 01:45:06 CST 2023]; root of context hierarchy
+2023-03-18 01:51:07.007  INFO   org.springframework.jmx.export.MBeanExporter                  行:449    Unregistering JMX-exposed beans on shutdown
+2023-03-18 01:51:07.007  INFO   org.springframework.boot.StartupInfoLogger                    行:48     Starting ToutiaoApplication on LAPTOP-C167LQK3 with PID 6776 (started by XinYe in D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager)
+2023-03-18 01:51:07.007  INFO   org.springframework.boot.SpringApplication                    行:666    No active profile set, falling back to default profiles: default
+2023-03-18 01:51:07.007  INFO   o.springframework.context.support.AbstractApplicationContext  行:578    Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@457d3e14: startup date [Sat Mar 18 01:51:07 CST 2023]; root of context hierarchy
+2023-03-18 01:51:08.008  INFO   o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  行:328    Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$906fc0df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-18 01:51:08.008  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:81     Tomcat initialized with port(s): 8080 (http)
+2023-03-18 01:51:08.008  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting service Tomcat
+2023-03-18 01:51:08.008  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting Servlet Engine: Apache Tomcat/8.0.33
+2023-03-18 01:51:08.008  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing Spring embedded WebApplicationContext
+2023-03-18 01:51:08.008  INFO   o.s.boot.context.embedded.EmbeddedWebApplicationContext       行:272    Root WebApplicationContext: initialization completed in 936 ms
+2023-03-18 01:51:08.008  INFO   o.s.boot.context.embedded.ServletRegistrationBean             行:189    Mapping servlet: 'dispatcherServlet' to [/]
+2023-03-18 01:51:08.008  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-18 01:51:08.008  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-03-18 01:51:08.008  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-03-18 01:51:08.008  INFO   o.s.boot.context.embedded.AbstractFilterRegistrationBean      行:258    Mapping filter: 'requestContextFilter' to: [/*]
+2023-03-18 01:51:09.009  INFO   o.s.w.s.mvc.method.annotation.RequestMappingHandlerAdapter    行:539    Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@457d3e14: startup date [Sat Mar 18 01:51:07 CST 2023]; root of context hierarchy
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/ || /index],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.HomeController.index(org.springframework.ui.Model,int)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/user/{userId}],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.HomeController.userIndex(org.springframework.ui.Model,int)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/profile/{groupId}/{userId}]}" onto public java.lang.String com.nowcoder.controller.IndexController.profile(java.lang.String,int,int,java.lang.String)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/request]}" onto public java.lang.String com.nowcoder.controller.IndexController.request(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/redirect/{code}]}" onto public java.lang.String com.nowcoder.controller.IndexController.redirect(int,javax.servlet.http.HttpSession)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/response]}" onto public java.lang.String com.nowcoder.controller.IndexController.response(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/vm]}" onto public java.lang.String com.nowcoder.controller.IndexController.news(org.springframework.ui.Model)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/admin]}" onto public java.lang.String com.nowcoder.controller.IndexController.admin(java.lang.String)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/reg/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.reg(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/logout/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.logout(java.lang.String)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/login/],methods=[GET || POST]}" onto public java.lang.String com.nowcoder.controller.LoginController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/setting]}" onto public java.lang.String com.nowcoder.controller.SettingController.setting()
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-03-18 01:51:09.009  INFO   o.s.w.s.handler.AbstractHandlerMethodMapping$MappingRegistry  行:534    Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-03-18 01:51:09.009  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:51:09.009  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:51:09.009  INFO   o.s.web.servlet.handler.AbstractUrlHandlerMapping             行:341    Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-03-18 01:51:09.009  INFO   o.s.b.web.servlet.view.velocity.EmbeddedVelocityViewResolver  行:38     Using EmbeddedVelocityToolboxView instead of default VelocityView due to specified toolboxConfigLocation
+2023-03-18 01:51:09.009  INFO   o.s.web.servlet.view.velocity.VelocityConfigurer              行:140    ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2023-03-18 01:51:09.009  INFO   o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer      行:58     LiveReload server is running on port 35729
+2023-03-18 01:51:09.009  INFO   org.springframework.jmx.export.MBeanExporter                  行:431    Registering beans for JMX exposure on startup
+2023-03-18 01:51:09.009  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:51:09.009  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Starting ProtocolHandler ["http-nio-8080"]
+2023-03-18 01:51:09.009  INFO   org.apache.juli.logging.DirectJDKLog                          行:180    Using a shared selector for servlet write/read
+2023-03-18 01:51:09.009  INFO   o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer  行:162    Tomcat started on port(s): 8080 (http)
+2023-03-18 01:51:09.009  INFO   org.springframework.boot.StartupInfoLogger                    行:57     Started ToutiaoApplication in 2.261 seconds (JVM running for 421.887)

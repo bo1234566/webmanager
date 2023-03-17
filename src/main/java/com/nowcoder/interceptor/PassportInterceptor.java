@@ -48,7 +48,7 @@ public class PassportInterceptor implements HandlerInterceptor {
 
         if (ticket != null) {
             LoginTicket loginTicket = loginTicketDAO.selectByTicket(ticket);
-            logger.info("loginTicket getStatus not 0 "+( loginTicket.getStatus() != 0) );
+//            logger.info("loginTicket getStatus not 0 "+( loginTicket.getStatus() != 0) );
             if (loginTicket == null || loginTicket.getExpired().before(new Date()) || loginTicket.getStatus() != 0) {
                 logger.info("preHandle not set hostHolder");
                 return true;
