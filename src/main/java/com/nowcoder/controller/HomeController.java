@@ -5,6 +5,7 @@ import com.nowcoder.model.News;
 import com.nowcoder.model.ViewObject;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.UserService;
+import com.nowcoder.util.ToutiaoUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by bo1234566 on 2023/3/12.
@@ -64,5 +69,29 @@ public class HomeController {
         model.addAttribute("vos", getNews(userId, 0, 100));
         return "home";
     }
-
+    /**
+     * todo forgetPassword function
+     *
+     */
+    @RequestMapping(path = {"/forgetPassword/"}, method = {RequestMethod.GET, RequestMethod.POST})
+    public String forgetPassword(Model model, @RequestParam("username") String username,
+                                 @RequestParam("oldPassword") String oldPassword,
+                                 @RequestParam("newPassword") String newPassword,
+                                 @CookieValue("ticket") String ticket){
+        try {
+            Map<String, Object> map = userService.forgetPassword(username, oldPassword, newPassword);
+            if (map.isEmpty()) {
+                model.addAttribute("vos",getNews(0,0,100));
+                logger.info("test: this is /forgetPassword/ rendering");
+                userService.logout(ticket);
+                return "home";
+            } else {
+                return ToutiaoUtil.getJSONString(1, map.values().toString());
+            }
+        }
+        catch (Exception e){
+            logger.error("更新密码失败" + e.getMessage());
+            return ToutiaoUtil.getJSONString(1,"更新密码失败");
+        }
+    }
 }

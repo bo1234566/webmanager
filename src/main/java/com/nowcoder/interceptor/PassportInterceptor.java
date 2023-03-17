@@ -40,6 +40,7 @@ public class PassportInterceptor implements HandlerInterceptor {
             for (Cookie cookie : httpServletRequest.getCookies()) {
                 if (cookie.getName().equals("ticket")) {
                     ticket = cookie.getValue();
+                    logger.info("preHandle ticket " + ticket.toString());
                     break;
                 }
             }

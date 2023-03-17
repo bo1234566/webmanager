@@ -93,7 +93,6 @@ public class UserService {
         map.put("ticket", ticket);
         return map;
     }
-
     private String addLoginTicket(int userId) {
         LoginTicket ticket = new LoginTicket();
         ticket.setUserId(userId);
@@ -104,7 +103,8 @@ public class UserService {
         ticket.setStatus(0);
         ticket.setTicket(UUID.randomUUID().toString().replaceAll("-", ""));
         loginTicketDAO.addTicket(ticket);
-        logger.info("addTicket"+ticket);
+        logger.info("user id add ticket " + userId);
+        logger.info("addTicket "+ticket.getTicket());
         return ticket.getTicket();
     }
 
@@ -114,5 +114,37 @@ public class UserService {
 
     public void logout(String ticket) {
         loginTicketDAO.updateStatus(ticket, 1);
+    }
+    public Map<String, Object> forgetPassword(String username, String oldPassword, String newPassword){
+        Map<String, Object> map = new HashMap<String, Object>();
+        if (StringUtils.isBlank(username)) {
+            map.put("msgname", "用户名不能为空");
+            return map;
+        }
+        User user = userDAO.selectByName(username);
+        if(user == null){
+            map.put("msgname", "该用户名不存在，请重试");
+            return map;
+        }
+        String dataBasePassword = user.getPassword();
+        String userBasePassword = ToutiaoUtil.MD5(oldPassword + user.getSalt());
+        String userNewPassword = ToutiaoUtil.MD5(newPassword + user.getSalt());
+        if(!StringUtils.equals(dataBasePassword, userBasePassword))
+        {
+            map.put("msgpwd", "原始密码不正确");
+            return map;
+        }
+        else if(StringUtils.equals(oldPassword, newPassword)){
+            map.put("msgpwd", "新密码不能和原密码相同");
+            return map;
+        }
+        else if(StringUtils.equals(dataBasePassword, userNewPassword)){
+            map.put("msgpwd", "新密码不能与近期密码一样");
+            return map;
+        }
+        user.setPassword(userNewPassword);
+        userDAO.updatePassword(user);
+        logger.info("更新用户新密码成功 " +  newPassword);
+        return map;
     }
 }
