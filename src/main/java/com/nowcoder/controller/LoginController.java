@@ -87,4 +87,9 @@ public class LoginController {
         logger.info("test: user type logout");
         return "redirect:/";
     }
- }
+
+/**
+ * todo forgetPassword function
+ *
+ */
+}

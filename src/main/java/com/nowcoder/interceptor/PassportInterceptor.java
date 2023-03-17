@@ -48,21 +48,27 @@ public class PassportInterceptor implements HandlerInterceptor {
 
         if (ticket != null) {
             LoginTicket loginTicket = loginTicketDAO.selectByTicket(ticket);
+            logger.info("loginTicket getStatus not 0 "+( loginTicket.getStatus() != 0) );
             if (loginTicket == null || loginTicket.getExpired().before(new Date()) || loginTicket.getStatus() != 0) {
+                logger.info("preHandle not set hostHolder");
                 return true;
             }
 
             User user = userDAO.selectById(loginTicket.getUserId());
             hostHolder.setUser(user);
+            logger.info("preHandler set hostHolder " + hostHolder.getUser().toString());
         }
         return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
+        logger.info("modelAndView not null "+ (modelAndView != null ));
+        logger.info("hostHolder getUser not null " + (hostHolder.getUser() != null));
         if (modelAndView != null && hostHolder.getUser() != null) {
             //this area user hostHolder and addObject,  html related to the modelAndView
             modelAndView.addObject("user", hostHolder.getUser());
+            logger.info("postHandle add modelAndView "+ hostHolder.getUser());
         }
     }
 
@@ -70,5 +76,6 @@ public class PassportInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
         // threadLocal variable must clear Here  !!
         hostHolder.clear();
+        logger.info("afterCompletion clear hostHolder");
     }
 }

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="">
+    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="add LoginController&amp;homecontroller annotation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/interceptor/LoginRequiredInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/interceptor/LoginRequiredInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -553,7 +550,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

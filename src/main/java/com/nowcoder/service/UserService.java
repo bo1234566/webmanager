@@ -98,7 +98,7 @@ public class UserService {
         ticket.setUserId(userId);
         Date date = new Date();
         //ticket expired time count
-        date.setTime(date.getTime() +1000*60*5);
+        date.setTime(date.getTime() +1000*60*10);
         ticket.setExpired(date);
         ticket.setStatus(0);
         ticket.setTicket(UUID.randomUUID().toString().replaceAll("-", ""));
