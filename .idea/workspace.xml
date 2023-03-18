@@ -4,8 +4,65 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="add LoginController&amp;homecontroller annotation">
+    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="add forget password function&#10;&#10;Signed-off-by: bo1234566 &lt;wangbohpu@163.com&gt;">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_14_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_17_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/NewsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/QiniuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/letter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/letterDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_17_0_46__Default_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_17_0_46__Default_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/interceptor/LoginRequiredInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/interceptor/LoginRequiredInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/interceptor/PassportInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/interceptor/PassportInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/NewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/util/ToutiaoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/util/ToutiaoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/site/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/site/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/site/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/site/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/interceptor/LoginRequiredInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/interceptor/LoginRequiredInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/interceptor/PassportInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/interceptor/PassportInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/NewsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/util/ToutiaoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/util/ToutiaoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/base/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/base/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/base/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/base/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/base/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/base/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/component/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/component/component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/component/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/component/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/component/popupLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/component/popupLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/site/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/site/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/site/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/site/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/styles/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/styles/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/styles/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/styles/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toutiao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/toutiao.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +231,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/resume/code/webmanager&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/BO_work/resume/牛客项目/code/代码/webmanager/webmanager/src/main/resources/static",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager\src\main\resources\static" />
+      <recent name="D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager\src\main\resources\templates" />
+      <recent name="D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager\src\main\resources\static\scripts\main\site" />
+      <recent name="D:\BO_work\resume\牛客项目\code\代码\webmanager\webmanager\src\main\resources" />
+      <recent name="D:\workspace\toutiao\src\main\java\com\nowcoder\model" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nowcoder.interceptor" />
       <recent name="com.nowcoder.dao" />
@@ -189,15 +253,8 @@
       <recent name="com.nowcoder.aspect" />
       <recent name="com.nowcoder" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\toutiao\src\main\java\com\nowcoder\model" />
-      <recent name="D:\workspace\toutiao\src\main\resources\static\scripts" />
-      <recent name="D:\workspace\toutiao\src\main\resources\templates" />
-      <recent name="D:\workspace\toutiao\src\main\resources" />
-      <recent name="D:\workspace\toutiao\src\main\resources\static" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.InitDatabaseTests">
+  <component name="RunManager" selected="Application.ToutiaoApplication">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -418,9 +475,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InitDatabaseTests" />
         <item itemvalue="Application.ToutiaoApplication" />
         <item itemvalue="JUnit.ToutiaoApplicationTests" />
+        <item itemvalue="JUnit.InitDatabaseTests" />
         <item itemvalue="JUnit.InitDatabaseTests.initData" />
         <item itemvalue="JUnit.InitDatabaseTests.InitDataBase" />
       </list>
@@ -585,7 +642,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java</url>
           <line>34</line>
-          <properties class="com.nowcoder.controller.HomeController">
+          <properties class="com.nowcoder.controller.HomeController" method="getNews">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -597,6 +654,7 @@
       <configuration name="Application">
         <watch expression="httpServletRequest.getRequestURI()" language="JAVA" custom="" />
         <watch expression="hostHolder.getUser()" language="JAVA" custom="" />
+        <watch expression="localFilePath" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -605,7 +663,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/webmanager$ToutiaoApplication.ic" NAME="ToutiaoApplication Coverage Results" MODIFIED="1678538180791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/webmanager$ToutiaoApplication.ic" NAME="ToutiaoApplication Coverage Results" MODIFIED="1679150199248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nowcoder.*</FILTER>
     </SUITE>
   </component>

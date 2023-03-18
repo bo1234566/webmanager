@@ -24,7 +24,7 @@ import java.util.Date;
 @Component
 public class LoginRequiredInterceptor implements HandlerInterceptor {
 
-    private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    private static final Logger logger = LoggerFactory.getLogger(PassportInterceptor.class);
     @Autowired
     private HostHolder hostHolder;
 

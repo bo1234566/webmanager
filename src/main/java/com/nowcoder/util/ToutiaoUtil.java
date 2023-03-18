@@ -12,6 +12,9 @@ import java.util.Map;
  * Created by nowcoder on 2016/7/3.
  */
 public class ToutiaoUtil {
+    public static String IMAGE_DIR = "D:/upload/";
+    public static String TOUTIAO_DOMAIN = "http://127.0.0.1:8080/";
+    public static String[] IMAGE_FILE_EXT = new String[]{"png","jpg","jpeg","bmp"};
     private static final Logger logger = LoggerFactory.getLogger(ToutiaoUtil.class);
 
     public static String getJSONString(int code) {
@@ -62,5 +65,13 @@ public class ToutiaoUtil {
             logger.error("生成MD5失败", e);
             return null;
         }
+    }
+    public static boolean isFileAllowed(String fileEXT){
+        for(String ext: IMAGE_FILE_EXT){
+            if(ext.equals(fileEXT)){
+                return true;
+            }
+        }
+        return false;
     }
 }
