@@ -1,19 +1,20 @@
 package com.nowcoder.controller;
 
 import com.nowcoder.aspect.LogAspect;
+import com.nowcoder.model.News;
+import com.nowcoder.model.User;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.QiniuService;
+import com.nowcoder.service.UserService;
 import com.nowcoder.util.ToutiaoUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
@@ -28,6 +29,8 @@ public class NewsController {
     NewsService newsservice;
     @Autowired
     QiniuService qiniuService;
+    @Autowired
+    UserService userService;
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @RequestMapping(path = {"/uploadImage/"}, method = {RequestMethod.POST})
@@ -81,4 +84,15 @@ public class NewsController {
             return ToutiaoUtil.getJSONString(1,"发布失败");
         }
     }
+    @RequestMapping(path = {"/news/{newsId}"}, method = {RequestMethod.GET})
+    public String newsDetail(Model model, @PathVariable("newsId") int newsId){
+        News news = newsservice.getById(newsId);
+        if(news != null){
+
+        }
+        model.addAttribute("news", news);
+        model.addAttribute("owner",userService.getUser(news.getUserId()));
+        return "detail";
+    }
+
 }

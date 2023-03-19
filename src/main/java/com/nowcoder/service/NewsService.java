@@ -66,4 +66,8 @@ public class NewsService {
         newsDAO.addNews(news);
         return ToutiaoUtil.getJSONString(0,"添加news成功");
     }
+
+    public News getById(int newsId){
+       return newsDAO.selectById(newsId);
+    }
 }
