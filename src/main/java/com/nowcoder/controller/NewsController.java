@@ -46,6 +46,9 @@ public class NewsController {
         }
     }
 
+    /**
+     * use for 127 domain image display--
+     */
     @RequestMapping(path = {"/image"}, method = {RequestMethod.GET})
     @ResponseBody
     public void getImage(@RequestParam("name") String imageName,
@@ -54,6 +57,7 @@ public class NewsController {
             response.setContentType("image/jpeg");
             StreamUtils.copy(new FileInputStream(new
                     File(ToutiaoUtil.IMAGE_DIR + imageName)), response.getOutputStream());
+            logger.info("get image " + imageName);
         } catch (Exception e) {
             logger.error("读取图片错误" + e.getMessage());
         }
