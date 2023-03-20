@@ -1,8 +1,8 @@
 package com.nowcoder.controller;
 
 import com.nowcoder.aspect.LogAspect;
-import com.nowcoder.model.News;
-import com.nowcoder.model.User;
+import com.nowcoder.model.*;
+import com.nowcoder.service.CommentService;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.QiniuService;
 import com.nowcoder.service.UserService;
@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.*;
 
 @Controller
 
@@ -29,6 +30,8 @@ public class NewsController {
     NewsService newsservice;
     @Autowired
     QiniuService qiniuService;
+    @Autowired
+    CommentService commentService;
     @Autowired
     UserService userService;
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
@@ -87,8 +90,16 @@ public class NewsController {
     @RequestMapping(path = {"/news/{newsId}"}, method = {RequestMethod.GET})
     public String newsDetail(Model model, @PathVariable("newsId") int newsId){
         News news = newsservice.getById(newsId);
-        if(news != null){
-
+        if (news != null) {
+            List<Comment> comments = commentService.getCommentsByEntity(news.getId(), EntityType.ENTITY_NEWS);
+            List<ViewObject> commentVOs = new ArrayList<ViewObject>();
+            for (Comment comment : comments) {
+                ViewObject commentVO = new ViewObject();
+                commentVO.set("comment", comment);
+                commentVO.set("user", userService.getUser(comment.getUserId()));
+                commentVOs.add(commentVO);
+            }
+            model.addAttribute("comments", commentVOs);
         }
         model.addAttribute("news", news);
         model.addAttribute("owner",userService.getUser(news.getUserId()));
