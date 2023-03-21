@@ -64,7 +64,7 @@ public class InitDatabaseTests {
                 comment.setUserId(i + 1);
                 comment.setCreatedDate(new Date());
                 comment.setStatus(0);
-                comment.setContent("this are comments test" + String.valueOf(j));
+                comment.setContent("this are comments test 可以的" + String.valueOf(j));
                 comment.setEntityId(news.getId());
                 comment.setEntityType(EntityType.ENTITY_NEWS);
                 commentDAO.addComment(comment);

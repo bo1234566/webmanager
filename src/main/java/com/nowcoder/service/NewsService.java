@@ -1,6 +1,9 @@
 package com.nowcoder.service;
 
+import com.nowcoder.dao.CommentDAO;
 import com.nowcoder.dao.NewsDAO;
+import com.nowcoder.model.Comment;
+import com.nowcoder.model.EntityType;
 import com.nowcoder.model.HostHolder;
 import com.nowcoder.model.News;
 import com.nowcoder.util.ToutiaoUtil;
@@ -26,6 +29,8 @@ public class NewsService {
     @Autowired
     private HostHolder hostHolder;
 
+    @Autowired
+    private CommentDAO commentDAO;
     public List<News> getLatestNews(int userId, int offset, int limit) {
         return newsDAO.selectByUserIdAndOffset(userId, offset, limit);
     }
@@ -56,7 +61,7 @@ public class NewsService {
             news.setUserId(hostHolder.getUser().getId());
         } else{
             //“匿名id”
-            news.setUserId(0);
+            news.setUserId(3);
         }
 
         news.setImage(image);
@@ -65,6 +70,10 @@ public class NewsService {
         news.setLink(link);
         newsDAO.addNews(news);
         return ToutiaoUtil.getJSONString(0,"添加news成功");
+    }
+
+    public void updateCommentCount(int commentCount, int newsId) {
+        newsDAO.updateCommentCount(commentCount, newsId);
     }
 
     public News getById(int newsId){

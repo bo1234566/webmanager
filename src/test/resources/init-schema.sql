@@ -30,7 +30,8 @@ CREATE TABLE `login_ticket` (
   `expired` DATETIME NOT NULL,
   `status` INT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `ticket_UNIQUE` (`ticket` ASC));
+  UNIQUE INDEX `ticket_UNIQUE` (`ticket` ASC)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `comment`;
 CREATE TABLE `comment` (
@@ -43,8 +44,7 @@ CREATE TABLE `comment` (
 `status` INT NOT NULL DEFAULT 0,
 PRIMARY KEY (`id`),
 INDEX `entity_index` (`entity_id` ASC, `entity_type` ASC)
-)
-ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `message`;
 CREATE TABLE `message` (

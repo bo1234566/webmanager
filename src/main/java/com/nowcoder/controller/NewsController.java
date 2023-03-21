@@ -34,6 +34,8 @@ public class NewsController {
     CommentService commentService;
     @Autowired
     UserService userService;
+    @Autowired
+    HostHolder hostHolder;
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @RequestMapping(path = {"/uploadImage/"}, method = {RequestMethod.POST})
@@ -105,5 +107,30 @@ public class NewsController {
         model.addAttribute("owner",userService.getUser(news.getUserId()));
         return "detail";
     }
+
+    @RequestMapping(path = {"/addComment"}, method = {RequestMethod.POST})
+    public String addComment(@RequestParam("content") String content,
+                          @RequestParam("newsId") int newsId) {
+        try {
+            Comment comment = new Comment();
+            comment.setContent(content);
+            comment.setCreatedDate(new Date());
+            comment.setStatus(0);
+            comment.setEntityType(EntityType.ENTITY_NEWS);
+            comment.setEntityId(newsId);
+            comment.setUserId(hostHolder.getUser().getId());
+            commentService.addComment(comment);
+            int count = commentService.getCommentCount(comment.getEntityId(), comment.getEntityType());
+            newsservice.updateCommentCount(count, newsId);
+
+        } catch (Exception e) {
+            logger.error("插入评论失败" + e.getMessage());
+        ToutiaoUtil.getJSONString(1,"添加评论失败");
+        }
+        return "redirect:/news/" + String.valueOf(newsId);
+    }
+    /**
+     * todo delect comment function
+     */
 
 }

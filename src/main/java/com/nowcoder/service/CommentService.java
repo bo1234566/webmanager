@@ -13,7 +13,14 @@ public class CommentService {
     @Autowired
     CommentDAO commentDAO;
     public List<Comment> getCommentsByEntity(int entityId,int EntityType) {
-        return commentDAO.selectByEntity(entityId,EntityType);
+        return commentDAO.selectByEntity(entityId, EntityType);
+    }
 
+    public int getCommentCount(int entityID, int EntityType) {
+        return commentDAO.getCommentCount(entityID, EntityType);
+    }
+
+    public void addComment(Comment comment) {
+        commentDAO.addComment(comment);
     }
 }

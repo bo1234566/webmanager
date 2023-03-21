@@ -1,10 +1,8 @@
 package com.nowcoder.dao;
 
 import com.nowcoder.model.News;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import com.nowcoder.model.User;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -23,6 +21,10 @@ public interface NewsDAO {
 
     @Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where id=#{id}"})
     News selectById(int id);
+
+    @Update({"update ", TABLE_NAME, " set comment_count=#{comment_count} where id=#{id}"})
+    void updateCommentCount(@Param("comment_count") int comment_count, @Param("id") int id);
+
 
     List<News> selectByUserIdAndOffset(@Param("userId") int userId, @Param("offset") int offset,
                                        @Param("limit") int limit);
