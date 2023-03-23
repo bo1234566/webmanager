@@ -16,10 +16,10 @@ public class MessageService {
         messageDAO.addMessage(message);
     }
     public List<Message> getConversationList(int userId, int offset, int limit) {
-        return messageDAO.getConversationList(userId,0, 10);
+        return messageDAO.getConversationList(userId,offset, limit);
     }
     public List<Message> getConversationDetail(String conversationId, int offset, int limit) {
-        return messageDAO.getConversationDetail(conversationId,0, 10);
+        return messageDAO.getConversationDetail(conversationId,offset, limit);
     }
     public int getUnreadCount(int userId, String conversationId) {
         return messageDAO.getConversationUnReadCount(userId, conversationId);

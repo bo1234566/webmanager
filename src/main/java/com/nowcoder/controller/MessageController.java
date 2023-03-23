@@ -32,13 +32,13 @@ public class MessageController {
     UserService userService;
     private static final Logger logger = LoggerFactory.getLogger(MessageController.class);
     @RequestMapping(path = {"/msg/detail"}, method = {RequestMethod.GET})
-    public String conversationDetail(@RequestParam("conversationId") String conversationId, Model model) {
+        public String conversationDetail(@RequestParam("conversationId") String conversationId, Model model) {
         try {
             List<ViewObject> messages = new ArrayList<>();
             List<Message> conversationDetail = messageService.getConversationDetail(conversationId, 0, 10);
             for (Message msg : conversationDetail) {
                 ViewObject vo = new ViewObject();
-                vo.set("messages", msg);
+                vo.set("message", msg);
                 User user = userService.getUser(msg.getFromId());
                 if (user == null) {
                     continue;
@@ -47,7 +47,7 @@ public class MessageController {
                 vo.set("userName", user.getName());
                 messages.add(vo);
             }
-            model.addAttribute("message", messages);
+            model.addAttribute("messages", messages);
             return "letterDetail";
         } catch (Exception e) {
             logger.error("获取站内信失败" + e.getMessage());
