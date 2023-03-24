@@ -32,7 +32,7 @@ public interface MessageDAO {
 
     /** sql code
      * 特别注意 my.ini的配置===
-     * select * ,count(id) as id from ( select * from  message where from_id=2 or to_id=2 order by id desc) tt group by conversation_id order by created_date desc limit 0,10;
+     * select from_id, to_id, content, has_read, conversation_id, created_date ,count(id) as id from ( select * from  message where from_id=3 or to_id=3 order by id desc) tt group by conversation_id order by created_date desc limit 0,10;
      insert into message ( from_id ,to_id,content ,created_date, has_read, conversation_id) values (5, 7, "noID" ,"2023-03-23 14:15:30" , 0,  "5_6");
      select  *   from message  where conversation_id="2_3" order by id desc limit 0 , 20;
      select count(id) from  message where has_read = 0 and to_id=2;

@@ -79,4 +79,7 @@ public class NewsService {
     public News getById(int newsId){
        return newsDAO.selectById(newsId);
     }
+    public void updateLikeCount(int newsId, int likeCount) {
+        newsDAO.updateLikeCount(likeCount, newsId);
+    }
 }
