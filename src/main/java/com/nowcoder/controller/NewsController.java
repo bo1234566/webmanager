@@ -2,10 +2,7 @@ package com.nowcoder.controller;
 
 import com.nowcoder.aspect.LogAspect;
 import com.nowcoder.model.*;
-import com.nowcoder.service.CommentService;
-import com.nowcoder.service.NewsService;
-import com.nowcoder.service.QiniuService;
-import com.nowcoder.service.UserService;
+import com.nowcoder.service.*;
 import com.nowcoder.util.ToutiaoUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +33,8 @@ public class NewsController {
     UserService userService;
     @Autowired
     HostHolder hostHolder;
+    @Autowired
+    LikeService likeService;
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @RequestMapping(path = {"/uploadImage/"}, method = {RequestMethod.POST})
@@ -95,6 +94,14 @@ public class NewsController {
         if (news != null) {
             List<Comment> comments = commentService.getCommentsByEntity(news.getId(), EntityType.ENTITY_NEWS);
             List<ViewObject> commentVOs = new ArrayList<ViewObject>();
+            if (news != null) {
+                int localHost = hostHolder.getUser() != null ? hostHolder.getUser().getId() : 0;
+                if (localHost != 0) {
+                    model.addAttribute("like", likeService.getLikeStatus(localHost, EntityType.ENTITY_NEWS, newsId));
+                } else {
+                    model.addAttribute("like", 0);
+                }
+            }
             for (Comment comment : comments) {
                 ViewObject commentVO = new ViewObject();
                 commentVO.set("comment", comment);

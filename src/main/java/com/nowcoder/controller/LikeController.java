@@ -31,9 +31,13 @@ public class LikeController {
     public String like(Model mode, @RequestParam("newsId") int newsId) {
         logger.info("start from like controller");
             User user = hostHolder.getUser();
+        if (user != null) {
             long likeCount = likeService.like(user.getId(), EntityType.ENTITY_NEWS, newsId);
             newsService.updateLikeCount(newsId, (int) likeCount);
             return ToutiaoUtil.getJSONString(0, String.valueOf(likeCount));
+        } else {
+            return ToutiaoUtil.getJSONString(1, "点赞失败");
+        }
     }
     @RequestMapping(path = {"/dislike"}, method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody

@@ -1,8 +1,10 @@
 package com.nowcoder.controller;
 
+import com.nowcoder.model.EntityType;
 import com.nowcoder.model.HostHolder;
 import com.nowcoder.model.News;
 import com.nowcoder.model.ViewObject;
+import com.nowcoder.service.LikeService;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.UserService;
 import org.slf4j.Logger;
@@ -26,6 +28,8 @@ public class HomeController {
 
     @Autowired
     UserService userService;
+    @Autowired
+    LikeService likeService;
 
     @Autowired
     HostHolder hostHolder;
@@ -37,12 +41,17 @@ public class HomeController {
      */
     private List<ViewObject> getNews(int userId, int offset, int limit) {
         List<News> newsList = newsService.getLatestNews(userId, offset, limit);
-
+        int localHostId = hostHolder.getUser() != null ? hostHolder.getUser().getId() : 0;
         List<ViewObject> vos = new ArrayList<>();
         for (News news : newsList) {
             ViewObject vo = new ViewObject();
             vo.set("news", news);
             vo.set("user", userService.getUser(news.getUserId()));
+            if (localHostId != 0) {
+                vo.set("like", likeService.getLikeStatus(localHostId, EntityType.ENTITY_NEWS, news.getId()));
+            } else {
+                vo.set("like", 0);
+            }
             vos.add(vo);
         }
         return vos;
