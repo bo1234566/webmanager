@@ -36,6 +36,10 @@ public class LikeHandler implements EventHandler {
         //此处不应该是userName,以和user发的站内信区别.使用系统账号,3
         message.setFromId(3);
         message.setCreatedDate(new Date());
+        int fromId = 3;
+        int toId = model.getEntityOwnerId();
+        String conversationId = fromId < toId ? String.format("%d_%d", fromId, toId) : String.format("%d_%d", toId, fromId);
+        message.setConversationId(conversationId);
         messageService.addMessage(message);
     }
 
