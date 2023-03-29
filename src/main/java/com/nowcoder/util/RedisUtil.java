@@ -16,17 +16,17 @@ import redis.clients.jedis.JedisPool;
 public class RedisUtil {
     private static final Logger logger = LoggerFactory.getLogger(RedisUtil.class);
 
-    public static void main(String[] args) {
-        logger.info("start");
-        Jedis jedis = new Jedis();
-        jedis.set("hello", "100");
-        jedis.incr("hello");
-        JedisPool jedisPool = new JedisPool();
-        for (int i = 0;i<50;i++) {
-            Jedis j = jedisPool.getResource();
-            j.get("a");
-            logger.info("POOL" + i);
-            j.close();
-        }
-    }
+//    public static void main(String[] args) {
+//        logger.info("start");
+//        Jedis jedis = new Jedis();
+//        jedis.set("hello", "100");
+//        jedis.incr("hello");
+//        JedisPool jedisPool = new JedisPool();
+//        for (int i = 0;i<50;i++) {
+//            Jedis j = jedisPool.getResource();
+//            j.get("a");
+//            logger.info("POOL" + i);
+//            j.close();
+//        }
+//    }
 }
